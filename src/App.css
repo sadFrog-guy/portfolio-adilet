@@ -1,0 +1,50 @@
+:root{
+	--main-primary-color: #008ccf;
+	--main-secondary-color: #006190;
+	--btn-hover-color: #004d74;
+	--font-color-main: #333;
+	--card-bg-color: #f9f9f9;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+.container {
+   width: 100%;
+   max-width: 1600px;
+   margin: 0 auto;
+}
+h1, h2, h3, h4, h5, h6, p{
+   padding: 0;
+   margin: 0;
+}
+
+body {
+	margin: 0;
+	font-family: 'Merriweather', serif;
+	font-size: 18px;
+	font-weight: 300;
+	color: #333;
+}
+
+.page {
+	margin: 45px auto 70px;
+	max-width: 1860px;
+	min-height: 40vh;
+	padding: 1rem;
+	margin-bottom: 30px;
+}
+.section {
+	margin-top: 50px;
+}
+
+.relative {
+	position: relative;
+}
+
+@media only screen and (max-width: 1183px) {
+	.page {
+		margin: 20px auto 40px;
+	}
+}

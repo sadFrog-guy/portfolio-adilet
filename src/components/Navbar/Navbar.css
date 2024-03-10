@@ -1,0 +1,143 @@
+.navbar {
+	padding: 0 20px;
+	background: rgb(255, 255, 255);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: var(--main-primary-color);
+	font-weight: 700;
+}
+
+.navbarInner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+}
+
+.navbarLeft {
+	font-size: 22px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	display: flex;
+}
+.navbarLogo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Lato", sans-serif;
+	font-size: 1.5rem;
+}
+
+.logoName {
+	position: relative;
+    background: radial-gradient(circle, rgba(63,67,251,0) 40%, rgba(0,140,207,0.07886904761904767) 89%);
+
+    position: relative;
+    font-size: 15px;
+    padding: 0 15px 11px 4px;
+    margin-right: 5px;
+	border-radius: 5px;
+}
+
+.logoName::after {
+	content: "";
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border: 1px solid #008ccfbd;
+	border-radius: 4px;
+	position: absolute;
+}
+
+.navbarRight {
+	display: flex;
+	justify-content: flex-end;
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+}
+.navbarLinks {
+	display: flex;
+}
+.navbarLinks li {
+	list-style: none;
+	margin-right: 15px;
+	padding: 0.6em 1em;
+	position: relative;
+	cursor: pointer;
+}
+
+.navLink::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 1em;
+	left: 1em;
+	height: 0.12rem;
+	background-color: currentColor;
+	transform: scale(0);
+	visibility: hidden;
+	transition-property: transform;
+	transform-origin: 0 50%;
+	transition-duration: 0.4s;
+}
+
+.navLink:hover,
+.navbarActive:hover {
+	color: var(--main-secondary-color);
+}
+
+.navbarActive::after,
+.navLink:hover::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 1em;
+	left: 1em;
+	height: 0.12rem;
+	background-color: currentColor;
+	transform: scale(1);
+	visibility: visible;
+	text-align: start;
+}
+
+.navbarContacts {
+	background-color: var(--main-secondary-color);
+	color: #fff;
+}
+.navbarContacts:hover {
+	background-color: var(--btn-hover-color);
+}
+
+.navbarMobile {
+	display: none;
+}
+.navbarBurger {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 50px;
+}
+
+@media only screen and (max-width: 1183px) {
+	.navbar {
+		padding: 18 0px;
+	}
+
+	.navbarRight {
+		font-size: 16px;
+	}
+}
+
+@media only screen and (max-width: 960px) {
+	.navbar {
+		padding: 0;
+	}
+	.navbarLinks {
+		display: none;
+	}
+	.navbarMobile {
+		display: block;
+	}
+}
