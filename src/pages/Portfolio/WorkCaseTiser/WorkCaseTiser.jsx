@@ -13,7 +13,7 @@ const WorkCase = ({
               ? (
                 <a href={`${name}`}>
                   <h3 className='title'>
-                    <span className='arrow'> > </span>
+                    <span className='arrow'> {'>'} </span>
                     {title}
                   </h3>
                 </a>
@@ -23,7 +23,7 @@ const WorkCase = ({
                   return (
                     <a href={`${item.link}`}>
                       <h3 className='title' style={{fontSize: '18px'}}>
-                        <span className='arrow'> > </span>
+                        <span className='arrow'> {'>'} </span>
                         {item.name}
                       </h3>
                     </a>
